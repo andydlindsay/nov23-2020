@@ -1,20 +1,26 @@
 # W02D01 - TDD, CommonJS, and NPM
 
 ### To Do
-- [ ] Manual testing
-- [ ] Making assertions
-- [ ] Bringing in outside code
-- [ ] Exporting our code
-- [ ] Intro to NPM: a Node package manager
-- [ ] Mocha test runner
-- [ ] Ignoring files/folders
-- [ ] Chai assertion library
-- [ ] What is TDD?
-- [ ] Practice unit testing
+- [x] Manual testing
+- [x] Making assertions
+- [x] Bringing in outside code
+- [x] Exporting our code
+- [x] Intro to NPM: a Node package manager
+- [x] Mocha test runner
+- [x] Ignoring files/folders
+- [x] Chai assertion library
+- [x] What is TDD?
+- [x] Practice unit testing
 
+### 3 Main Topics
+* Intro to testing
+* Exporting/importing code
+* External packages
 
-
-
+### TDD
+* Test Driven Development
+* N-Driven Development
+* Write the minimum amount of code that makes the test pass
 
 
 
