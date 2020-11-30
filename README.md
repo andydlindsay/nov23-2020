@@ -2,4 +2,5 @@
 
 ## Table of Contents
 
-* [W01D03 - Objects in JS](https://github.com/andydlindsay/oct26-2020/tree/master/w02d01)
+* [W02D01 - TDD, CommonJS, and NPM](https://github.com/andydlindsay/oct26-2020/tree/master/w02d01)
+* [BREAKOUT - Mock Exam Review](https://github.com/andydlindsay/oct26-2020/tree/master/breakout-mock-exam-review)
