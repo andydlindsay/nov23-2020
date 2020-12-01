@@ -28,7 +28,22 @@ const round = function(number) {
  
 
 const median = function(arr) {
+  // sort the array
+  arr.sort();
 
+  const middleIndex = Math.floor(arr.length / 2);
+
+  // check if array length is odd or even
+  if (arr.length % 2 === 0) {
+    // if even, return average of two middle elements
+    const numOne = arr[middleIndex];
+    const numTwo = arr[middleIndex - 1];
+    const avg = (numOne + numTwo) / 2;
+    return round(avg);
+  }
+  
+  // if odd, return middle element
+  return arr[middleIndex];
 };
 
 // Don't change below:

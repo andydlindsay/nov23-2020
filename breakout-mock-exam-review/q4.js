@@ -28,8 +28,34 @@ const round = function(number) {
   return Math.round(number * 100) / 100;
 };
 
-const stdev = function(arr) {
+const sum = function(arr) {
+  // setup a variable to hold the return value
+  let total = 0;
 
+  // iterate through the array
+  for (const num of arr) {
+    // add the element's value to the total variable
+    total += num;
+  }
+
+  // return that variable
+  return total;
+};
+
+const stdev = function(arr) {
+  // sqrt(sum((x - populationMean)^2)/numberOfValues)
+  const numberOfValues = arr.length;
+  const populationMean = sum(arr) / numberOfValues;
+
+  const differences = arr.map((num) => {
+    const difference = num - populationMean;
+    return Math.pow(difference, 2)
+  });
+
+  const sumOfDifferences = sum(differences);
+  const avgDifference = sumOfDifferences / numberOfValues;
+  const squareRoot = Math.sqrt(avgDifference);
+  return round(squareRoot);
 };
 
 // Don't change below:

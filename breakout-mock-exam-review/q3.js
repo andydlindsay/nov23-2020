@@ -14,7 +14,33 @@
  *    6
  */
 const mode = function(arr) {
+  // sort the numbers into piles
+  const piles = {};
 
+  for (const num of arr) {
+    // have we seen the number before?
+    if (piles[num]) {
+      piles[num] += 1;
+    } else {
+      piles[num] = 1;
+    }
+  }
+
+  // console.log(piles);
+
+  // check which pile has the most numbers in it
+  let mostFrequentNum;
+  let numOccurrences = 0;
+
+  for (const pile in piles) {
+    const value = piles[pile];
+    if (value > numOccurrences) {
+      mostFrequentNum = pile;
+      numOccurrences = value;
+    }
+  }
+
+  return mostFrequentNum;
 };
 
 // Don't change below:
