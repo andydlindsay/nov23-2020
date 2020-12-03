@@ -27,6 +27,6 @@ returnPromise('one')
     return returnPromise('six');
   })
   .catch((err) => {
-    throw err;
+    // throw err;
     console.log(err);
   })
