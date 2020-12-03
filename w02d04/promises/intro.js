@@ -12,8 +12,4 @@ promise
   })
   .then((data) => {
     console.log(data);
-  })
-
-// console.log('promiseTwo', promiseTwo);
-
-// promiseTwo;
+  });
