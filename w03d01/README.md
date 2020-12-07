@@ -5,7 +5,6 @@
 - [ ] Intro to Express
 - [ ] What is "Middleware?"
 - [ ] Custom Middleware
-- [ ] Server-side view templates with EJS
 
 
 
