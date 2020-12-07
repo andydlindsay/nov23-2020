@@ -3,8 +3,14 @@
 ### To Do
 - [x] Intro to Web Servers
 - [x] Intro to Express
-- [ ] What is "Middleware?"
-- [ ] Custom Middleware
+- [x] What is "Middleware?"
+- [x] Custom Middleware
+- [x] EJS
+
+165.192.0.68 IPv4
+http://www.google.com 
+Domain Name Servers => map between google.com 192.168.44.87
+localhost => 127.0.0.1 || 0.0.0.0
 
 3 Pillars of Web Dev
 Week 3 - Back End / Server-side
@@ -33,8 +39,15 @@ Client ==> Server
 * Status code: 200, 2xx, 404, 500
 * Optionally respond with content: HTML, video, data from a database
 
+### Middleware
+* Middleware refers to code that sits between processes
+* Express middleware sits between the request and the response
+* middleware === functions
 
-
+### EJS
+* Embedded JS
+* Embedding our JS inside an HTML template
+* Templating engine
 
 
 
