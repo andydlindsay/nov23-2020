@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protected Secrets!</title>
+</head>
+<body>
+  <h1>Hello logged in user: <%= user.email %></h1>
+
+  <img src="https://cdn.dribbble.com/users/2190368/screenshots/4369474/gold-coins-treasure-chest-animated-icons.gif"/>
+
+  <form method="POST" action="/logout">
+    <button type="submit">Logout</button>
+  </form>
+</body>
+</html>
