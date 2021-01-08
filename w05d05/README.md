@@ -51,7 +51,7 @@ REpresentational State Transfer
 * if you aren't going to demo it, don't build it
 
 ### Wireframes/Mockups
-* mock out in low fedelity our front end
+* mock out in low fidelity our front end
 
 ### User Login
 * DON'T DO IT
@@ -63,8 +63,29 @@ app.get('/login/:user_id', (req, res) => {
 });
 ```
 
+### Tech Choices
+* BE - Node/Express/Postgres
+* FE - HTML/CSS/JS/jQuery/Bootstrap/SCSS
 
+### SPA vs Multi-page
+* these are not mutually exclusive
 
+### Git
+* I WILL NOT CODE ON MASTER
+* git branch
+* merge conflicts
+
+### Splitting up the work
+* Vertically - some part of the group works on FE and some part works on BE
+* Horizontally - everyone works on the same part
+* Pair Programming
+
+### Communication
+* is key
+* Slack, iMessage, Hangouts, Discord, anything
+
+### Deployment
+* up to you
 
 
 
