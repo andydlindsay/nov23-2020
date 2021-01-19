@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './components/Header';
-import VisitorCounter from './components/VisitorCounter';
+// import VisitorCounter from './components/VisitorCounter';
+import Pizza from './components/Pizza';
 import {useState} from 'react';
 
 const App = () => {
@@ -9,7 +10,8 @@ const App = () => {
   return (
     <div className="App">
       <Header whatever={title} heading="blah blah blah" color="secondary" />
-      <VisitorCounter />
+      {/* <VisitorCounter /> */}
+      <Pizza />
     </div>
   );
 };
