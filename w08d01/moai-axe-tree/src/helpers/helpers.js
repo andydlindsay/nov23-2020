@@ -15,3 +15,16 @@ export const announceResult = (playerSelection, compSelection) => {
   }
   return 'Tied';
 };
+
+export const genFeedbackMessage = (status) => {
+  switch (status) {
+    case 'Lost':
+      return 'You lost!';
+    case 'Won':
+      return 'Good job!';
+    case 'Tied':
+      return 'Tie game!';
+    default:
+      return 'Waiting for your choice!';
+  }
+};
