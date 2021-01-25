@@ -1,8 +1,11 @@
 import { useState } from 'react';
+import { genFeedbackMessage } from '../helpers/helpers';
 import axios from 'axios';
 
-const Result = () => {
+const Result = (props) => {
   const [highScores, setHighScores] = useState([]);
+
+  const message = genFeedbackMessage(props.status);
 
   const fetchHighScores = () => {
     axios
@@ -13,7 +16,7 @@ const Result = () => {
     
   return(
     <footer data-testid="result_footer">
-      <h2>Waiting for your choice!</h2>
+      <h2>{message}</h2>
       <button onClick={fetchHighScores} data-testid="high-scores">High Scores!</button>
       { highScores.map(highScore => <p key={highScore.id}>{highScore.name}: {highScore.points}</p>) }
     </footer>

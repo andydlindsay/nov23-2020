@@ -1,11 +1,20 @@
 const Computer = (props) => {
-  const {state} = props;
+  const {state, setState} = props;
+
+  const robotHeadClick = () => {
+    setState((prevState) => {
+      return { ...prevState, cheating: !prevState.cheating };
+    });
+  };
   
   return (
     <section className="computer">
       <span
         role="img" 
-        aria-label="robot" 
+        aria-label="robot"
+        data-testid="robot-icon"
+        className={state.cheating ? 'cheating' : null}
+        onClick={robotHeadClick}
       >
         🤖
       </span>
