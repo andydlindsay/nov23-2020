@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { announceResult } from '../helpers/helpers';
 
 const Player = (props) => {
-  const {playerSelection, compSelection, cheating} = props.state;
+  const {playerSelection, compSelection} = props.state;
   const {setState} = props;
   const options = [
     ['Moai', '🗿'],
@@ -22,7 +22,7 @@ const Player = (props) => {
       const compSelection = 'Moai';
       setState(prevState => ({ ...prevState, compSelection }));
     }
-  }, [playerSelection, cheating, setState]);
+  }, [playerSelection, setState]);
 
   const resetState = () => {
     setState(prevState => ({
@@ -34,8 +34,8 @@ const Player = (props) => {
     ));
   };
 
-  const registerPlayerItem = (value, updater) => {
-    updater(prevState => ({ ...prevState, playerSelection: value }));
+  const registerPlayerItem = (value) => {
+    setState(prevState => ({ ...prevState, playerSelection: value }));
   };
 
   return (
@@ -53,9 +53,8 @@ const Player = (props) => {
             const [choice, symbol] = option;
             return (
               <button
-                onClick={() => registerPlayerItem(choice, setState)}
+                onClick={() => registerPlayerItem(choice)}
                 type="button"
-                value={choice}
                 key={choice}
               >
                 <span
