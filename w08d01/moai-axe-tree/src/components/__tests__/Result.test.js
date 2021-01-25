@@ -22,7 +22,7 @@ test('mocking Axios', () => {
   // render the component
   const { getByTestId, findByText } = render(<Result status="Waiting" />);
 
-  // grabbed the button
+  // grab the button
   const fetchHighScoreButton = getByTestId('high-scores');
 
   // click on the button
