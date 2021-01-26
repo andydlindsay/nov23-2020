@@ -4,12 +4,12 @@
 - [x] React Router
 - [x] Advanced Routing
 - [x] Styled Components
-- [ ] `useContext`
-- [ ] `useRef`
-- [ ] Component Libraries
+- [x] `useContext`
+- [x] `useRef`
+- [x] Component Libraries
 
 
-
+React/Redux => external state storage
 
 
 
