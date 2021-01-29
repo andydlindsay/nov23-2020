@@ -4,11 +4,11 @@
 * [x] Ruby Intro
 * [x] Variables
 * [x] Conditionals
-* [ ] Loops
-* [ ] Methods
-* [ ] Hashes
-* [ ] Blocks and Lambdas
-* [ ] Classes
+* [x] Loops
+* [x] Methods
+* [x] Hashes
+* [x] Blocks and Lambdas
+* [x] Classes
 
 ### Why Ruby?
 * og curriculum was all rails
