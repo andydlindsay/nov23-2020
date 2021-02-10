@@ -1,0 +1,10 @@
+"use strict";
+let num = 7;
+num = 42;
+// num = 'hello';
+let myBool = false;
+myBool = 5;
+// myBool = 'hello';
+const nums = [1, 2, 3];
+nums.push(4);
+// nums.push(true);
